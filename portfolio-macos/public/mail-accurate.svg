@@ -1,0 +1,59 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="64" height="64" rx="14" fill="url(#mailBg)"/>
+  
+  <!-- Envelope back -->
+  <rect x="8" y="20" width="48" height="32" rx="4" fill="url(#envelopeBack)"/>
+  
+  <!-- Envelope front -->
+  <rect x="8" y="24" width="48" height="28" rx="4" fill="url(#envelopeFront)"/>
+  
+  <!-- Envelope flap -->
+  <path d="M8 24L32 40L56 24V28L32 44L8 28V24Z" fill="url(#envelopeFlap)"/>
+  
+  <!-- Stamp -->
+  <rect x="44" y="28" width="8" height="6" rx="1" fill="url(#stamp)" stroke="white" stroke-width="0.5"/>
+  <rect x="45" y="29" width="6" height="4" rx="0.5" fill="#EF4444"/>
+  
+  <!-- Address lines -->
+  <rect x="12" y="32" width="16" height="1" rx="0.5" fill="url(#addressLine)" opacity="0.7"/>
+  <rect x="12" y="36" width="20" height="1" rx="0.5" fill="url(#addressLine)" opacity="0.7"/>
+  <rect x="12" y="40" width="14" height="1" rx="0.5" fill="url(#addressLine)" opacity="0.7"/>
+  
+  <!-- Highlight -->
+  <rect x="8" y="24" width="48" height="4" rx="4" fill="url(#highlight)" opacity="0.4"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="32" cy="62" rx="24" ry="2" fill="black" opacity="0.15"/>
+  
+  <defs>
+    <linearGradient id="mailBg" x1="32" y1="0" x2="32" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#1E40AF"/>
+    </linearGradient>
+    <linearGradient id="envelopeBack" x1="32" y1="20" x2="32" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F4F6"/>
+      <stop offset="1" stop-color="#E5E7EB"/>
+    </linearGradient>
+    <linearGradient id="envelopeFront" x1="32" y1="24" x2="32" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/>
+      <stop offset="1" stop-color="#F9FAFB"/>
+    </linearGradient>
+    <linearGradient id="envelopeFlap" x1="32" y1="24" x2="32" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E5E7EB"/>
+      <stop offset="1" stop-color="#D1D5DB"/>
+    </linearGradient>
+    <linearGradient id="stamp" x1="48" y1="28" x2="48" y2="34" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white"/>
+      <stop offset="1" stop-color="#F3F4F6"/>
+    </linearGradient>
+    <linearGradient id="addressLine" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6B7280"/>
+      <stop offset="1" stop-color="#9CA3AF"/>
+    </linearGradient>
+    <linearGradient id="highlight" x1="32" y1="24" x2="32" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

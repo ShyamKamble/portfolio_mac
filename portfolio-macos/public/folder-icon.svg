@@ -1,0 +1,42 @@
+<svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shadow -->
+  <ellipse cx="32" cy="46" rx="28" ry="2" fill="black" opacity="0.1"/>
+  
+  <!-- Folder back part -->
+  <path d="M6 10C6 7.79086 7.79086 6 10 6H22L26 10H54C56.2091 10 58 11.7909 58 14V38C58 40.2091 56.2091 42 54 42H10C7.79086 42 6 40.2091 6 38V10Z" fill="url(#folderBack)"/>
+  
+  <!-- Folder front part -->
+  <path d="M6 14C6 11.7909 7.79086 10 10 10H22L26 14H54C56.2091 14 58 15.7909 58 18V38C58 40.2091 56.2091 42 54 42H10C7.79086 42 6 40.2091 6 38V14Z" fill="url(#folderFront)"/>
+  
+  <!-- Folder tab -->
+  <path d="M22 6H26L30 10H26L22 6Z" fill="url(#folderTab)"/>
+  
+  <!-- Highlight on front -->
+  <path d="M10 14H22L26 18H54C55.1046 18 56 18.8954 56 20V22H54C52.8954 22 52 21.1046 52 20H26L22 16H10C8.89543 16 8 15.1046 8 14C8 15.1046 8.89543 16 10 16Z" fill="url(#highlight)" opacity="0.6"/>
+  
+  <!-- Inner shadow -->
+  <path d="M10 18C8.89543 18 8 18.8954 8 20V38C8 39.1046 8.89543 40 10 40H54C55.1046 40 56 39.1046 56 38V20C56 18.8954 55.1046 18 54 18H26L22 14H10C8.89543 14 8 14.8954 8 16V18Z" fill="url(#innerShadow)" opacity="0.3"/>
+  
+  <defs>
+    <linearGradient id="folderBack" x1="32" y1="6" x2="32" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="folderFront" x1="32" y1="10" x2="32" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="folderTab" x1="26" y1="6" x2="26" y2="10" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#93C5FD"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="highlight" x1="32" y1="14" x2="32" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="innerShadow" x1="32" y1="14" x2="32" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="black" stop-opacity="0"/>
+      <stop offset="1" stop-color="black" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+</svg>

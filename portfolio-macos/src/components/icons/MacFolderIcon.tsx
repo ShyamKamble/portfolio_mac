@@ -1,0 +1,79 @@
+interface MacFolderIconProps {
+size?: number;
+className?: string;
+}
+
+export const MacFolderIcon = ({ size = 64, className }: MacFolderIconProps) => {
+return (
+<svg
+width={size}
+height={size}
+viewBox="0 0 64 64"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+className={className}
+>
+<defs>
+{/* Main folder gradient - macOS blue folder */}
+<linearGradient id="folderFront" x1="32" y1="20" x2="32" y2="54" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stopColor="#6CB5FF" />
+<stop offset="25%" stopColor="#4FA3F7" />
+<stop offset="75%" stopColor="#2E8AE6" />
+<stop offset="100%" stopColor="#1E7AD8" />
+</linearGradient>
+<linearGradient id="folderBack" x1="32" y1="10" x2="32" y2="22" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stopColor="#4A9BE8" />
+<stop offset="100%" stopColor="#3888D8" />
+</linearGradient>
+<linearGradient id="folderTab" x1="20" y1="10" x2="20" y2="18" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stopColor="#5CA8F0" />
+<stop offset="100%" stopColor="#3888D8" />
+</linearGradient>
+<linearGradient id="folderInner" x1="32" y1="18" x2="32" y2="50" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stopColor="#1A5FA0" />
+<stop offset="100%" stopColor="#0D4A80" />
+</linearGradient>
+<filter id="folderShadow" x="-10%" y="-10%" width="120%" height="130%">
+<feDropShadow dx="0" dy="3" stdDeviation="2" floodColor="#000000" floodOpacity="0.2" />
+</filter>
+</defs>
+{/* Back panel */}
+<path
+d="M6 16 C6 13 8 11 11 11 L24 11 C26 11 27 12 28 13.5 L31 18 L53 18 C56 18 58 20 58 23 L58 23 L6 23 Z"
+fill="url(#folderBack)"
+/>
+{/* Tab */}
+<path
+d="M6 16 C6 13 8 11 11 11 L24 11 C26 11 27 12 28 13.5 L31 18 L6 18 Z"
+fill="url(#folderTab)"
+/>
+{/* Inner shadow/depth */}
+<rect
+x="8"
+y="22"
+width="48"
+height="28"
+rx="2"
+fill="url(#folderInner)"
+/>
+{/* Front panel */}
+<path
+d="M6 24 C6 21 8 19 11 19 L53 19 C56 19 58 21 58 24 L58 50 C58 53 56 55 53 55 L11 55 C8 55 6 53 6 50 Z"
+fill="url(#folderFront)"
+filter="url(#folderShadow)"
+/>
+{/* Highlight on front */}
+<path
+d="M6 24 C6 21 8 19 11 19 L53 19 C56 19 58 21 58 24 L58 26 C58 23 56 21 53 21 L11 21 C8 21 6 23 6 26 Z"
+fill="#8FCAFF"
+opacity="0.6"
+/>
+{/* Subtle bottom shadow */}
+<path
+d="M11 55 C8 55 6 53 6 50 L6 48 C6 51 8 53 11 53 L53 53 C56 53 58 51 58 48 L58 50 C58 53 56 55 53 55 Z"
+fill="#1565B5"
+opacity="0.5"
+/>
+</svg>
+);
+};

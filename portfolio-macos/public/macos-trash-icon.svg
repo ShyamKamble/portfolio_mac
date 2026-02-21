@@ -1,0 +1,51 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shadow -->
+  <ellipse cx="32" cy="60" rx="24" ry="3" fill="black" opacity="0.15"/>
+  
+  <!-- Trash can body -->
+  <path d="M18 22C18 20.8954 18.8954 20 20 20H44C45.1046 20 46 20.8954 46 22V50C46 52.2091 44.2091 54 42 54H22C19.7909 54 18 52.2091 18 50V22Z" fill="url(#trashGradient)"/>
+  
+  <!-- Trash can lid -->
+  <rect x="16" y="16" width="32" height="6" rx="3" fill="url(#lidGradient)"/>
+  
+  <!-- Handle -->
+  <path d="M26 12C26 10.8954 26.8954 10 28 10H36C37.1046 10 38 10.8954 38 12V16H26V12Z" fill="url(#handleGradient)"/>
+  
+  <!-- Vertical lines on trash can -->
+  <rect x="26" y="26" width="1.5" height="20" rx="0.75" fill="url(#lineGradient)" opacity="0.6"/>
+  <rect x="32" y="26" width="1.5" height="20" rx="0.75" fill="url(#lineGradient)" opacity="0.6"/>
+  <rect x="38" y="26" width="1.5" height="20" rx="0.75" fill="url(#lineGradient)" opacity="0.6"/>
+  
+  <!-- Highlight on lid -->
+  <rect x="16" y="16" width="32" height="2" rx="1" fill="url(#highlight)" opacity="0.4"/>
+  
+  <!-- Inner shadow for depth -->
+  <path d="M20 22H44V50C44 51.1046 43.1046 52 42 52H22C20.8954 52 20 51.1046 20 50V22Z" fill="url(#innerShadow)" opacity="0.2"/>
+  
+  <defs>
+    <linearGradient id="trashGradient" x1="32" y1="20" x2="32" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E5E7EB"/>
+      <stop offset="1" stop-color="#9CA3AF"/>
+    </linearGradient>
+    <linearGradient id="lidGradient" x1="32" y1="16" x2="32" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F4F6"/>
+      <stop offset="1" stop-color="#D1D5DB"/>
+    </linearGradient>
+    <linearGradient id="handleGradient" x1="32" y1="10" x2="32" y2="16" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D1D5DB"/>
+      <stop offset="1" stop-color="#9CA3AF"/>
+    </linearGradient>
+    <linearGradient id="lineGradient" x1="0" y1="0" x2="0" y2="1" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6B7280"/>
+      <stop offset="1" stop-color="#374151"/>
+    </linearGradient>
+    <linearGradient id="highlight" x1="32" y1="16" x2="32" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="innerShadow" x1="32" y1="22" x2="32" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="black" stop-opacity="0"/>
+      <stop offset="1" stop-color="black" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,70 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main compass gradient -->
+    <linearGradient id="safariBase" x1="32" y1="2" x2="32" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#19D3FF" />
+      <stop offset="30%" stop-color="#00B8F5" />
+      <stop offset="70%" stop-color="#0099E0" />
+      <stop offset="100%" stop-color="#0080CC" />
+    </linearGradient>
+    <!-- Inner circle gradient -->
+    <linearGradient id="safariInner" x1="32" y1="8" x2="32" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E8E8E8" />
+    </linearGradient>
+    <!-- Red needle gradient -->
+    <linearGradient id="needleRed" x1="32" y1="14" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF3B30" />
+      <stop offset="100%" stop-color="#D62D23" />
+    </linearGradient>
+    <!-- White needle gradient -->
+    <linearGradient id="needleWhite" x1="32" y1="32" x2="32" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E0E0E0" />
+    </linearGradient>
+    <filter id="safariShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+    <filter id="needleShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- Outer circle - blue compass body -->
+  <circle cx="32" cy="32" r="30" fill="url(#safariBase)" filter="url(#safariShadow)"/>
+  
+  <!-- Inner highlight ring -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#40E0FF" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Inner white circle -->
+  <circle cx="32" cy="32" r="22" fill="url(#safariInner)"/>
+  
+  <!-- Compass tick marks -->
+  <g stroke="#0080CC" stroke-linecap="round">
+    <!-- Major ticks (N, S, E, W) -->
+    <line x1="32" y1="12" x2="32" y2="16" stroke-width="2"/>
+    <line x1="32" y1="48" x2="32" y2="52" stroke-width="2"/>
+    <line x1="48" y1="32" x2="52" y2="32" stroke-width="2"/>
+    <line x1="12" y1="32" x2="16" y2="32" stroke-width="2"/>
+    
+    <!-- Minor ticks -->
+    <line x1="46.14" y1="17.86" x2="48.28" y2="15.72" stroke-width="1"/>
+    <line x1="46.14" y1="46.14" x2="48.28" y2="48.28" stroke-width="1"/>
+    <line x1="17.86" y1="46.14" x2="15.72" y2="48.28" stroke-width="1"/>
+    <line x1="17.86" y1="17.86" x2="15.72" y2="15.72" stroke-width="1"/>
+  </g>
+  
+  <!-- Compass needle - Red (North) -->
+  <path d="M32 14 L36 32 L32 30 L28 32 Z" fill="url(#needleRed)" filter="url(#needleShadow)"/>
+  
+  <!-- Compass needle - White (South) -->
+  <path d="M32 50 L36 32 L32 34 L28 32 Z" fill="url(#needleWhite)" filter="url(#needleShadow)"/>
+  
+  <!-- Center dot -->
+  <circle cx="32" cy="32" r="3" fill="#555555" />
+  <circle cx="32" cy="32" r="2" fill="#888888" />
+  <circle cx="32" cy="32" r="1" fill="#AAAAAA" />
+  
+  <!-- Outer ring shadow -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#006699" stroke-width="0.5" opacity="0.5"/>
+</svg>

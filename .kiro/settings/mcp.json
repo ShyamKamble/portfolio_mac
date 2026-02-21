@@ -1,0 +1,107 @@
+{
+  "mcpServers": {
+    "@magicuidesign/mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@magicuidesign/mcp@latest"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": [
+        "shadcn@latest",
+        "mcp"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "npm-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@meanands/npm-package-docs-mcp"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "prisma": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "prisma",
+        "mcp",
+        "serve"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "fetch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-fetch"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "nodejs-docs": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "mcp-server-nodejs-api-docs"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "tailwindcss-server": {
+      "command": "npx",
+      "args": ["-y", "tailwindcss-mcp-server"]
+    },
+    "n8n-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "n8n-mcp"
+      ],
+      "env": {
+        "MCP_MODE": "stdio",
+        "LOG_LEVEL": "error",
+        "DISABLE_CONSOLE_OUTPUT": "true"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
